@@ -1,0 +1,72 @@
+:root {
+    --clr-orange: rgb(253, 197, 123);
+    --clr-darkturq: rgb(11, 36, 41);
+    --clr-purple: rgb(36, 61, 131);
+    --clr-hover: rgb(101, 146, 207);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-darkturq);
+}
+
+.card-container {
+    height: 40%;
+    width: 50%;
+    background-color: var(--clr-orange);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0px 0px 15px 0px #FFFFFF;
+}
+
+div.card-container h2 {
+    color: var(--clr-purple);
+    font-size: 2rem;
+}
+
+div.card-container h2,
+#advice-text {
+    margin-bottom: 1.5rem;
+    height: 25%;
+}
+
+#adviceID {
+    color: white;
+}
+
+#advice-text {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+div.card-container button {
+    background-color: var(--clr-purple);
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: white;
+    border: 0;
+    outline: 0;
+}
+
+div.card-container button:hover {
+    background-color: var(--clr-hover);
+    color: black;
+}
+
+div.card-container button:active {
+    transform: scale(0.95, 0.95);
+}
